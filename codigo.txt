@@ -1,0 +1,93 @@
+
+aluno tds@SLE213840 MINGW64 ~
+$ git clone ^[[200~https://github.com/Rossetow/trabalho-git-.gi^C
+
+aluno tds@SLE213840 MINGW64 ~
+$ git clone https://github.com/Rossetow/trabalho-git-.git
+Cloning into 'trabalho-git-'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+aluno tds@SLE213840 MINGW64 ~
+$ git remote add origin https://github.com/Rossetow/trabalho-git-.git
+fatal: not a git repository (or any of the parent directories): .git
+
+aluno tds@SLE213840 MINGW64 ~
+$ git remote add origin https://github.com/Rossetow/trabalho-git-.git
+fatal: not a git repository (or any of the parent directories): .git
+
+aluno tds@SLE213840 MINGW64 ~
+$ git checkout dev
+fatal: not a git repository (or any of the parent directories): .git
+
+aluno tds@SLE213840 MINGW64 ~
+$ git checkout dev https://github.com/Rossetow/trabalho-git-.git
+fatal: not a git repository (or any of the parent directories): .git
+
+aluno tds@SLE213840 MINGW64 ~
+$ git remote -v
+fatal: not a git repository (or any of the parent directories): .git
+
+aluno tds@SLE213840 MINGW64 ~
+$ git pull
+fatal: not a git repository (or any of the parent directories): .git
+
+aluno tds@SLE213840 MINGW64 ~
+$ cd "C:\Users\aluno tds\trabalho-git-"
+
+aluno tds@SLE213840 MINGW64 ~/trabalho-git- (master)
+$ git checkout dev
+error: pathspec 'dev' did not match any file(s) known to git
+
+aluno tds@SLE213840 MINGW64 ~/trabalho-git- (master)
+$ git checkout -b
+error: switch `b' requires a value
+
+aluno tds@SLE213840 MINGW64 ~/trabalho-git- (master)
+$ git checkout -b dev
+Switched to a new branch 'dev'
+
+aluno tds@SLE213840 MINGW64 ~/trabalho-git- (dev)
+$ git add XPTO.txt
+
+aluno tds@SLE213840 MINGW64 ~/trabalho-git- (dev)
+$ git commit -m thairon
+[dev db74e7e] thairon
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+aluno tds@SLE213840 MINGW64 ~/trabalho-git- (dev)
+$ git push -u origin dev
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 282 bytes | 282.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'dev' on GitHub by visiting:
+remote:      https://github.com/Rossetow/trabalho-git-/pull/new/dev
+remote:
+To https://github.com/Rossetow/trabalho-git-.git
+ * [new branch]      dev -> dev
+branch 'dev' set up to track 'origin/dev'.
+
+aluno tds@SLE213840 MINGW64 ~/trabalho-git- (dev)
+$ git pull origin QA
+fatal: couldn't find remote ref QA
+
+aluno tds@SLE213840 MINGW64 ~/trabalho-git- (dev)
+$ git pull origin QA
+fatal: couldn't find remote ref QA
+
+aluno tds@SLE213840 MINGW64 ~/trabalho-git- (dev)
+$ git pull origin master
+From https://github.com/Rossetow/trabalho-git-
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+
+aluno tds@SLE213840 MINGW64 ~/trabalho-git- (dev)
+$
